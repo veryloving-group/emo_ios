@@ -1,0 +1,520 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1E02849A2D54E55600755DFC /* app.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284992D54E55600755DFC /* app.swift */; };
+		1E02849C2D54E55600755DFC /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02849B2D54E55600755DFC /* ChatView.swift */; };
+		1E02849E2D54E55700755DFC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E02849D2D54E55700755DFC /* Assets.xcassets */; };
+		1E0284B42D54F0B800755DFC /* ChatBubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284B32D54F0B800755DFC /* ChatBubbleView.swift */; };
+		1E0284B92D54F0EB00755DFC /* ChatEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284B82D54F0EB00755DFC /* ChatEntry.swift */; };
+		1E0284BB2D54F0F900755DFC /* ChatMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284BA2D54F0F900755DFC /* ChatMessage.swift */; };
+		1E0284C02D54F14100755DFC /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284BF2D54F14100755DFC /* ChatViewModel.swift */; };
+		1E0284C32D54F15900755DFC /* AudioService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284C22D54F15900755DFC /* AudioService.swift */; };
+		1E0284C52D54F16700755DFC /* WebSocketService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284C42D54F16700755DFC /* WebSocketService.swift */; };
+		1E0284C72D54F17200755DFC /* ChatService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284C62D54F17200755DFC /* ChatService.swift */; };
+		1E0284CF2D54F1D000755DFC /* AudioHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284CE2D54F1D000755DFC /* AudioHandling.swift */; };
+		1E0284D12D54F1E100755DFC /* WebSocketHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284D02D54F1E100755DFC /* WebSocketHandling.swift */; };
+		1E0284D32D54F1F100755DFC /* Logger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284D22D54F1F100755DFC /* Logger.swift */; };
+		1E0284D62D54F33000755DFC /* ConnectionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284D52D54F33000755DFC /* ConnectionButton.swift */; };
+		1E0284D82D54F37400755DFC /* MuteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284D72D54F37400755DFC /* MuteButton.swift */; };
+		1E0284DB2D54F3AF00755DFC /* ChatLoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E0284DA2D54F3AF00755DFC /* ChatLoadingView.swift */; };
+		1E03FDE22D554C2B00081FA8 /* EVIMessage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E03FDE12D554C2600081FA8 /* EVIMessage.swift */; };
+		1E03FDE42D554D3900081FA8 /* ChatHandling.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E03FDE32D554D3900081FA8 /* ChatHandling.swift */; };
+		1E03FDE62D554E6100081FA8 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E03FDE52D554E6100081FA8 /* SettingsView.swift */; };
+		1E03FDE82D554EFD00081FA8 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E03FDE72D554EFD00081FA8 /* Settings.swift */; };
+		1E03FDEA2D554F2700081FA8 /* Bundle+Version.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E03FDE92D554F2600081FA8 /* Bundle+Version.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E0284962D54E55600755DFC /* Swift-EVIChat.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Swift-EVIChat.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E0284992D54E55600755DFC /* app.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = app.swift; sourceTree = "<group>"; };
+		1E02849B2D54E55600755DFC /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		1E02849D2D54E55700755DFC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E0284B32D54F0B800755DFC /* ChatBubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatBubbleView.swift; sourceTree = "<group>"; };
+		1E0284B82D54F0EB00755DFC /* ChatEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatEntry.swift; sourceTree = "<group>"; };
+		1E0284BA2D54F0F900755DFC /* ChatMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatMessage.swift; sourceTree = "<group>"; };
+		1E0284BF2D54F14100755DFC /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		1E0284C22D54F15900755DFC /* AudioService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioService.swift; sourceTree = "<group>"; };
+		1E0284C42D54F16700755DFC /* WebSocketService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketService.swift; sourceTree = "<group>"; };
+		1E0284C62D54F17200755DFC /* ChatService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatService.swift; sourceTree = "<group>"; };
+		1E0284CE2D54F1D000755DFC /* AudioHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioHandling.swift; sourceTree = "<group>"; };
+		1E0284D02D54F1E100755DFC /* WebSocketHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebSocketHandling.swift; sourceTree = "<group>"; };
+		1E0284D22D54F1F100755DFC /* Logger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logger.swift; sourceTree = "<group>"; };
+		1E0284D52D54F33000755DFC /* ConnectionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConnectionButton.swift; sourceTree = "<group>"; };
+		1E0284D72D54F37400755DFC /* MuteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MuteButton.swift; sourceTree = "<group>"; };
+		1E0284DA2D54F3AF00755DFC /* ChatLoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatLoadingView.swift; sourceTree = "<group>"; };
+		1E03FDE12D554C2600081FA8 /* EVIMessage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EVIMessage.swift; sourceTree = "<group>"; };
+		1E03FDE32D554D3900081FA8 /* ChatHandling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatHandling.swift; sourceTree = "<group>"; };
+		1E03FDE52D554E6100081FA8 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		1E03FDE72D554EFD00081FA8 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
+		1E03FDE92D554F2600081FA8 /* Bundle+Version.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Version.swift"; sourceTree = "<group>"; };
+		1E03FDED2D5558B300081FA8 /* Swift-EVIChat-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Swift-EVIChat-Info.plist"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		1E0284AB2D54F03500755DFC /* Preview Content */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1E0284932D54E55600755DFC /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1E02848D2D54E55600755DFC = {
+			isa = PBXGroup;
+			children = (
+				1E03FDED2D5558B300081FA8 /* Swift-EVIChat-Info.plist */,
+				1E0284AB2D54F03500755DFC /* Preview Content */,
+				1E0284A92D54F01900755DFC /* EVIChat */,
+				1E0284972D54E55600755DFC /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1E0284972D54E55600755DFC /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1E0284962D54E55600755DFC /* Swift-EVIChat.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1E0284A92D54F01900755DFC /* EVIChat */ = {
+			isa = PBXGroup;
+			children = (
+				1E0284AF2D54F06F00755DFC /* Utils */,
+				1E0284AE2D54F06A00755DFC /* Core */,
+				1E0284AD2D54F05900755DFC /* Chat */,
+				1E02849D2D54E55700755DFC /* Assets.xcassets */,
+				1E0284992D54E55600755DFC /* app.swift */,
+			);
+			path = EVIChat;
+			sourceTree = "<group>";
+		};
+		1E0284AD2D54F05900755DFC /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				1E0284C12D54F14B00755DFC /* Services */,
+				1E0284BE2D54F11000755DFC /* ViewModels */,
+				1E0284B52D54F0C300755DFC /* Models */,
+				1E0284B02D54F08600755DFC /* Views */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		1E0284AE2D54F06A00755DFC /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				1E0284C92D54F19400755DFC /* Protocols */,
+				1E0284C82D54F18B00755DFC /* Extensions */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		1E0284AF2D54F06F00755DFC /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				1E0284D22D54F1F100755DFC /* Logger.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		1E0284B02D54F08600755DFC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1E0284D42D54F32200755DFC /* ControlButtons */,
+				1E02849B2D54E55600755DFC /* ChatView.swift */,
+				1E0284B32D54F0B800755DFC /* ChatBubbleView.swift */,
+				1E0284DA2D54F3AF00755DFC /* ChatLoadingView.swift */,
+				1E03FDE52D554E6100081FA8 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		1E0284B52D54F0C300755DFC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1E03FDE12D554C2600081FA8 /* EVIMessage.swift */,
+				1E0284B82D54F0EB00755DFC /* ChatEntry.swift */,
+				1E0284BA2D54F0F900755DFC /* ChatMessage.swift */,
+				1E03FDE72D554EFD00081FA8 /* Settings.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1E0284BE2D54F11000755DFC /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				1E0284BF2D54F14100755DFC /* ChatViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1E0284C12D54F14B00755DFC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				1E0284C22D54F15900755DFC /* AudioService.swift */,
+				1E0284C42D54F16700755DFC /* WebSocketService.swift */,
+				1E0284C62D54F17200755DFC /* ChatService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		1E0284C82D54F18B00755DFC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				1E03FDE92D554F2600081FA8 /* Bundle+Version.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		1E0284C92D54F19400755DFC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				1E0284CE2D54F1D000755DFC /* AudioHandling.swift */,
+				1E0284D02D54F1E100755DFC /* WebSocketHandling.swift */,
+				1E03FDE32D554D3900081FA8 /* ChatHandling.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		1E0284D42D54F32200755DFC /* ControlButtons */ = {
+			isa = PBXGroup;
+			children = (
+				1E0284D52D54F33000755DFC /* ConnectionButton.swift */,
+				1E0284D72D54F37400755DFC /* MuteButton.swift */,
+			);
+			path = ControlButtons;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1E0284952D54E55600755DFC /* Swift-EVIChat */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E0284A42D54E55700755DFC /* Build configuration list for PBXNativeTarget "Swift-EVIChat" */;
+			buildPhases = (
+				1E0284922D54E55600755DFC /* Sources */,
+				1E0284932D54E55600755DFC /* Frameworks */,
+				1E0284942D54E55600755DFC /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				1E0284AB2D54F03500755DFC /* Preview Content */,
+			);
+			name = "Swift-EVIChat";
+			packageProductDependencies = (
+			);
+			productName = "Swift-EVIChat";
+			productReference = 1E0284962D54E55600755DFC /* Swift-EVIChat.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1E02848E2D54E55600755DFC /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1620;
+				LastUpgradeCheck = 1620;
+				TargetAttributes = {
+					1E0284952D54E55600755DFC = {
+						CreatedOnToolsVersion = 16.2;
+					};
+				};
+			};
+			buildConfigurationList = 1E0284912D54E55600755DFC /* Build configuration list for PBXProject "Swift-EVIChat" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1E02848D2D54E55600755DFC;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 1E0284972D54E55600755DFC /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1E0284952D54E55600755DFC /* Swift-EVIChat */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1E0284942D54E55600755DFC /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E02849E2D54E55700755DFC /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1E0284922D54E55600755DFC /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E0284C32D54F15900755DFC /* AudioService.swift in Sources */,
+				1E03FDE62D554E6100081FA8 /* SettingsView.swift in Sources */,
+				1E0284BB2D54F0F900755DFC /* ChatMessage.swift in Sources */,
+				1E0284D62D54F33000755DFC /* ConnectionButton.swift in Sources */,
+				1E02849C2D54E55600755DFC /* ChatView.swift in Sources */,
+				1E0284D82D54F37400755DFC /* MuteButton.swift in Sources */,
+				1E02849A2D54E55600755DFC /* app.swift in Sources */,
+				1E0284C72D54F17200755DFC /* ChatService.swift in Sources */,
+				1E03FDE22D554C2B00081FA8 /* EVIMessage.swift in Sources */,
+				1E0284DB2D54F3AF00755DFC /* ChatLoadingView.swift in Sources */,
+				1E03FDEA2D554F2700081FA8 /* Bundle+Version.swift in Sources */,
+				1E03FDE42D554D3900081FA8 /* ChatHandling.swift in Sources */,
+				1E0284D32D54F1F100755DFC /* Logger.swift in Sources */,
+				1E0284C52D54F16700755DFC /* WebSocketService.swift in Sources */,
+				1E03FDE82D554EFD00081FA8 /* Settings.swift in Sources */,
+				1E0284B92D54F0EB00755DFC /* ChatEntry.swift in Sources */,
+				1E0284C02D54F14100755DFC /* ChatViewModel.swift in Sources */,
+				1E0284CF2D54F1D000755DFC /* AudioHandling.swift in Sources */,
+				1E0284D12D54F1E100755DFC /* WebSocketHandling.swift in Sources */,
+				1E0284B42D54F0B800755DFC /* ChatBubbleView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1E0284A22D54E55700755DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1E0284A32D54E55700755DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1E0284A52D54E55700755DFC /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 768T8DW37A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Swift-EVIChat-Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = CHat;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "andreasnaoum.com.Swift-EVIChat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1E0284A62D54E55700755DFC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 768T8DW37A;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Swift-EVIChat-Info.plist";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = CHat;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "andreasnaoum.com.Swift-EVIChat";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1E0284912D54E55600755DFC /* Build configuration list for PBXProject "Swift-EVIChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0284A22D54E55700755DFC /* Debug */,
+				1E0284A32D54E55700755DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E0284A42D54E55700755DFC /* Build configuration list for PBXNativeTarget "Swift-EVIChat" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E0284A52D54E55700755DFC /* Debug */,
+				1E0284A62D54E55700755DFC /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1E02848E2D54E55600755DFC /* Project object */;
+}
