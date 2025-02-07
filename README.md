@@ -6,6 +6,8 @@ A native iOS client for Hume AI's API, built with Swift and SwiftUI.
 
 ## Overview
 
+https://github.com/user-attachments/assets/d75ff33a-7e34-4f52-9ea4-f22c43601757
+
 This iOS application provides a native interface to interact with Hume AI's API. While the app is functional for basic interactions, there are still several areas that need improvement.
 
 ## Features
