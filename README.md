@@ -29,7 +29,7 @@ This iOS application provides a native interface to interact with Hume AI's API.
 
 1. Clone the repository:
   ```bash
-  git clone https://github.com/andreasnaoum/hume-evi-ios.git
+  git clone https://github.com/veryloving-group/emo_ios
   cd hume-evi-ios
   ```
 
