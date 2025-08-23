@@ -99,7 +99,7 @@ final class EVIChatViewModel: ObservableObject {
     }
     
     private func disconnect() {
-        /*audioService.stop*/()
+        audioService.stop()
         webSocketService.disconnect()
     }
     
@@ -138,16 +138,12 @@ final class EVIChatViewModel: ObservableObject {
         webSocketLock.async { [weak self] in
             let message = ["type": type, "data": data]
             
-            print("Message")
-            //            print(message)
-            
             guard let jsonData = try? JSONSerialization.data(withJSONObject: message),
                   let jsonString = String(data: jsonData, encoding: .utf8) else {
                 return
             }
             
             self?.webSocketService.send(jsonString)
-            
         }
     }
     
